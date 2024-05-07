@@ -9,16 +9,16 @@ eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 
 # C
-alias ccw='cc -Wall -Wextra -Werror'
-alias b='cc -fsanitize=address -fsanitize=undefined'
-alias a='ccw -fsanitize=address -fsanitize=undefined'
-alias aa='a *.c && ./a.out'
-alias norm='norminette'
+alias norm="norminette"
+alias ccw="cc -Wall -Wextra -Werror"
+alias b="cc -fsanitize=address -fsanitize=undefined -O0"
+alias a="ccw -fsanitize=address -fsanitize=undefined -O0"
 
 # zsh
-alias vz='vim ~/.zshrc'
-alias sz='source ~/.zshrc'
-alias vv='vim ~/.vimrc'
-alias dds='find . -name ".DS_Store" -type f -delete'
-alias ll='ls -la'
+alias dds="find . -name ".DS_Store" -type f -delete"
+alias vz="vim ~/.zshrc"
+alias sz="source ~/.zshrc"
+alias vv="vim ~/.vimrc"
+alias ll="ls -la"
+export PS="%2d "
 eval "$(anyenv init -)"

@@ -18,6 +18,13 @@ set tabstop=4
 set noexpandtab
 set shiftwidth=4
 set clipboard+=unnamed
+
+set list
+set listchars=tab:._,eol:$
+
+hi NonText    ctermbg=None ctermfg=59 guibg=None guifg=None
+hi SpesialKey ctermbg=None ctermfg=59 guibg=None guifg=None
+
 set termwinkey=<C-g>
 nnoremap <C-g> <C-w>
 autocmd VimEnter * vert term
